@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 14</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <label for="yourName">Как тебя зовут?</label>
+        <p>
+            <input type="text" name="name" id="name" placeholder="Имя">
+        </p>
+        <input type="button" name="send" value="Отправить" onclick="clickMe()">
+    </div>
+
+    <div>
+        <fieldset class="form">
+            <label for="firstNumber">Какое первое число?</label>
+            <p>
+                <input type="number" name="number" id="numberOne">
+            </p>
+            <label for="secondNumber">Какое второе число?</label>
+            <p>
+                <input type="number" name="number" id="numberTwo">
+            </p>
+            <input type="button" name="addition" id="addition" value="+" onclick="addMe()">
+            <input type="button" name="subtraction" id="subtraction" value="-" onclick="subtractMe()">
+            <input type="button" name="division" id="division" value="/" onclick="divideMe()">
+            <input type="button" name="multiplication" id="multiplication" value="*" onclick="multiplyMe()">
+
+            <p><label for="secondNumber">Итого</label>
+                <input type="text" name="result" id="result"></p>
+        </fieldset>
+    </div>
+
+    <div class="bg" onclick="changeColor(this)">Нажми</div>
+
+    <div>
+        <img src="https://funart.pro/uploads/posts/2021-11/1638225751_2-funart-pro-p-kotiki-milie-nyashnie-zhivotnie-krasivo-fo-2.jpg"
+            alt="cat" width="35%" id="catImage">
+    </div>
+    <div>
+        <input type="button" name="back" id="back" value="Назад" onclick="changeMe()">
+        <input type="button" name="forward" id="forward" value="Вперед" onclick="changeMe2()">
+    </div>
+
+    <script src="style/index.js"></script>
+</body>
+
+</html>

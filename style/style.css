@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+}
+
+div {
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+    font-weight: 600;
+    color: rgb(150, 23, 223);
+    padding-bottom: 50px;
+}
+
+.form {
+    width: 35vw;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: rgb(150, 23, 223);
+    font-weight: 600;
+}
+
+.bg {
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    height: 60px;
+    width: 100px;
+    font-weight: 600;
+    background-color: rgb(195, 192, 197);
+    color: rgb(208, 34, 34);
+}
+
+.bgColor {
+    background-color: rgb(193, 157, 216);
+    border: 2px solid rgb(74, 70, 77);
+}
