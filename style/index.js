@@ -74,15 +74,21 @@ function createAccount() {
     else if (passwordTwoYandex.value == ''){
         document.getElementById('errorMessage').innerHTML+= "Заполни пустую строку!<br>";
     }
+    else if (passwordYandex.value.length < 6){
+        document.getElementById('errorMessage').innerHTML+= "Ваш пароль меньше 6 символов!<br>";
+    }
+    else if (passwordTwoYandex.value.length < 6){
+        document.getElementById('errorMessage').innerHTML+= "Ваш пароль меньше 6 символов!<br>";
+    }
     else {
         alert(`Добро пожаловать, ${nameYandex.value}`);
-    }
 
-    document.getElementById("name").value = "";
-    document.getElementById("surname").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
-    document.getElementById("passwordTwo").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("surname").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("passwordTwo").value = "";
+    }
 }
 
 function colorChange() {
